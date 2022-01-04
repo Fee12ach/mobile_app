@@ -9,7 +9,10 @@ import {
   HStack,
   Input,
   Text,
+  Avatar,
+  IconButton,
 } from "@chakra-ui/react";
+import { FaPencilAlt } from "react-icons/fa";
 import Background from "../components/images/Background.png";
 import { Link } from "react-router-dom";
 // import photox from './photo/tu.jpg'
@@ -29,18 +32,54 @@ const Register = () => {
       >
         <Box p="6">
           <Box m="4">
-            <Heading fontSize="30px" color="#2874A6">ลงทะเบียน</Heading>
+            <Heading fontSize="30px" color="#2874A6">
+              ลงทะเบียน
+            </Heading>
             <Center>
-              <Image
-                m="2.5"
-                borderRadius="100"
-                boxSize="120px"
-                src="https://bit.ly/dan-abramov"
-                alt="Dan Abramov"
-              />
+              <label
+                style={{ position: "relative" }}
+                htmlFor="photo-project-file"
+              >
+                <Avatar
+                  m="2.5"
+                  borderRadius="100"
+                  boxSize="120px"
+                  src="https://bit.ly/dan-abramov"
+                  alt="Dan Abramov"
+                />
+                <IconButton
+                  isRound
+                  as="label"
+                  bgColor="white"
+                  htmlFor="photo-project-file"
+                  // colorScheme='linkedin'
+                  position="absolute"
+                  top={20}
+                  left={115}
+                  // zIndex={-1}
+                  size="xs"
+                  fontSize={"15px"}
+                  zIndex="banner"
+                  boxShadow="lg"
+                  // variant="solid"
+                  // isDisabled
+                  icon={<FaPencilAlt style={{ zIndex: -1 }} />}
+                  color="green.500"
+                />
+                <input
+                  accept="image/*"
+                  id="photo-project-file"
+                  type="file"
+                  style={{ display: "none" }}
+                />
+                {/* <Text isTruncated mt={5} align={'center'} fontSize={'lg'} color={'gray.500'}>
+                                        {fileavatar?.data?.name}
+                                    </Text> */}
+                {/* </Stack > */}
+              </label>
             </Center>
             <FormControl>
-              <HStack mt="4">
+              <HStack mt="6">
                 <Input
                   size="md"
                   placeholder="ชื่อ"

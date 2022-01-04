@@ -50,22 +50,17 @@ const LoginPage = () => {
             </FormLabel>
             <Input variant="filled" placeholder="Password" type="password" />
           </FormControl>
+          <Box as={Link} to="/forgotpassword" color="#2874A6">
+            <Text textAlign="right" fontSize="xs">
+              ลืมรหัสผ่าน?
+            </Text>
+          </Box>
           <Button color="white" size="md" bgColor="#2874A6" boxShadow="lg">
             Login
           </Button>
-
-          <Box color="#2874A6">
-            <Link to="/forgotpassword">
-              <Text textAlign="right" fontSize="xs">
-                Forgot password?
-              </Text>
-            </Link>
-            <Text fontSize="xs">or</Text>
-            <Box as={Link} to="/register">
-              <Text fontSize="xs">resister?</Text>
-            </Box>{" "}
+          <Box as={Link} to="/register" color="#2874A6">
+            <Text fontSize="xs">สมัครสมาชิก</Text>
           </Box>
-
           <Button
             color="black"
             size="md"
