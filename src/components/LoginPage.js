@@ -1,8 +1,6 @@
-//login
 import React, { Fragment } from "react";
 import {
   Box,
-  Center,
   Input,
   Stack,
   Text,
