@@ -28,7 +28,7 @@ const authMiddleware = new ApolloLink((operation, forward) => {
 // })
 // console.log('pro', process.env);
 const wsLink = new WebSocketLink({
-  uri: "http://localhost:8000/graphql",
+  uri: "ws://localhost:8000/graphql",
   options: {
     reconnect: true,
   },

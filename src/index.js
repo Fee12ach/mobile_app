@@ -2,20 +2,20 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-//import { ApolloProvider } from "@apollo/client";
-//import client from './apolloClient';
+import { ApolloProvider } from "@apollo/client";
+import client from './apolloClient';
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 
 ReactDOM.render(
-  //<ApolloProvider client={client}>
+  <ApolloProvider client={client}>
   <BrowserRouter>
     <ChakraProvider>
       <App />
     </ChakraProvider>
   </BrowserRouter>
- // </ApolloProvider>,
+  </ApolloProvider>
   ,document.getElementById("root")
 );
 

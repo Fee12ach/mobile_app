@@ -8,6 +8,8 @@ import {
   FormControl,
   FormLabel,
   HStack,
+  InputGroup,
+  InputLeftElement,
 } from "@chakra-ui/react";
 import { Image } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
@@ -16,7 +18,10 @@ import Background from "../components/images/Background.png";
 import google from "../components/images/google.png";
 import Line from "../components/images/Line.png";
 
-const LoginPage = () => {
+import { CgProfile } from "react-icons/cg";
+import { RiLockPasswordLine } from "react-icons/ri";
+
+const Loginpage = () => {
   return (
     <Fragment>
       <Box
@@ -44,11 +49,26 @@ const LoginPage = () => {
             <FormLabel textAlign="center" value="" color="#2874A6" my="2">
               USERNAME
             </FormLabel>
-            <Input variant="filled" placeholder="Username" />
+            <InputGroup>
+              <InputLeftElement
+                pointerEvents="none"
+                children={<CgProfile color="#0a7e8c" />}
+                fontSize="1.3em"
+              />
+              <Input variant="filled" placeholder="Username" />
+            </InputGroup>
+
             <FormLabel textAlign="center" value="" color="#2874A6" my="2">
               PASSWORD
             </FormLabel>
-            <Input variant="filled" placeholder="Password" type="password" />
+            <InputGroup>
+              <InputLeftElement
+                pointerEvents="none"
+                children={<RiLockPasswordLine color="#0a7e8c" />}
+                fontSize="1.3em"
+              />
+              <Input variant="filled" placeholder="Password" type="password" />
+            </InputGroup>
           </FormControl>
           <Box as={Link} to="/forgotpassword" color="#2874A6">
             <Text textAlign="right" fontSize="xs">
@@ -102,4 +122,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default Loginpage;
