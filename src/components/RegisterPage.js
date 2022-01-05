@@ -4,7 +4,6 @@ import {
   Button,
   FormControl,
   Heading,
-  Image,
   Center,
   HStack,
   Input,
@@ -12,7 +11,7 @@ import {
   Avatar,
   IconButton,
 } from "@chakra-ui/react";
-import { FaPencilAlt } from "react-icons/fa";
+import { FaCamera} from "react-icons/fa";
 import Background from "../components/images/Background.png";
 import { Link } from "react-router-dom";
 // import photox from './photo/tu.jpg'
@@ -44,8 +43,6 @@ const Register = () => {
                   m="2.5"
                   borderRadius="100"
                   boxSize="120px"
-                  src="https://bit.ly/dan-abramov"
-                  alt="Dan Abramov"
                 />
                 <IconButton
                   isRound
@@ -55,15 +52,15 @@ const Register = () => {
                   // colorScheme='linkedin'
                   position="absolute"
                   top={20}
-                  left={115}
+                  left={105}
                   // zIndex={-1}
-                  size="xs"
+                  size="sm"
                   fontSize={"15px"}
                   zIndex="banner"
                   boxShadow="lg"
                   // variant="solid"
                   // isDisabled
-                  icon={<FaPencilAlt style={{ zIndex: -1 }} />}
+                  icon={<FaCamera style={{ zIndex: -1 }} />}
                   color="green.500"
                 />
                 <input
