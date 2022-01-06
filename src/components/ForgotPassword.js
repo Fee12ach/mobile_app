@@ -63,7 +63,7 @@ const forgotpassword = () => {
             ท่านจะได้รับลิ้งเพื่อรีเซ็ตรหัสผ่านในอีเมลของท่าน
           </Text>
           <nav>
-            <Link to="/login">
+            <Link to="/">
               <Text as="u" fontSize="xs" color="blue">
                 Back to login
               </Text>

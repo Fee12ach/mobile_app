@@ -148,7 +148,7 @@ const EditProfile = () => {
               </Button>
             </HStack>
             <nav>
-              <Link to="/login">
+              <Link to="/">
                 <Text as="u" fontSize="xs" color="blue">
                   Back to login
                 </Text>

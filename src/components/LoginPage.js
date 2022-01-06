@@ -10,6 +10,7 @@ import {
   HStack,
   InputGroup,
   InputLeftElement,
+  useToast,
 } from "@chakra-ui/react";
 import { Image } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
@@ -17,11 +18,66 @@ import Nuukeng from "../components/images/nuukeng.png";
 import Background from "../components/images/Background.png";
 import google from "../components/images/google.png";
 import Line from "../components/images/Line.png";
-
 import { CgProfile } from "react-icons/cg";
 import { RiLockPasswordLine } from "react-icons/ri";
 
-const Loginpage = () => {
+const Loginpage = (props) => {
+  // const { t } = useTranslation()
+  //   const toast = useToast()
+  //   const history = useHistory()
+  //   const [username, setUsername] = useState('')
+  //   const [password, setPassword] = useState('')
+  //   const { user, setToken } = useContext(AuthContext)
+  //   const [login] = useMutation(loginMutation)
+  //   useEffect(
+  //       () => {
+  //           if (user) {
+  //               setTimeout(() => {
+  //                   history.push('/courses')
+  //               }, 100)
+  //           }
+  //       },
+  //       [history, user],
+  //   )
+
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   try {
+  //     const { data } = await login({ variables: { username, password } });
+
+  //     if (data) {
+  //       // const decoded = await jwtDecode(data?.login)
+  //       // const { data: dataProject } = await projectData.refetch({ _id: decoded?.project })
+  //       setToken(data.login);
+  //       // setProject(dataProject)
+  //       await toast({
+  //         position: "top",
+  //         title: "Success",
+  //         description: "Login Success",
+  //         status: "success",
+  //         duration: 6000,
+  //         isClosable: true,
+  //       });
+  //       history.push("/courses");
+  //     } else {
+  //       console.log("Incorrect username or password");
+  //     }
+  //   } catch (err) {
+  //     console.error(err);
+  //     toast({
+  //       position: "top",
+  //       title: "ERROR",
+  //       description: `${err?.graphQLErrors[0]?.message}`,
+  //       status: "error",
+  //       duration: 6000,
+  //       isClosable: true,
+  //     });
+  //   }
+  // };
+  // const responseFacebook = (response) => {
+  //   console.log(response);
+  // };
+
   return (
     <Fragment>
       <Box

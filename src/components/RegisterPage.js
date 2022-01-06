@@ -10,11 +10,16 @@ import {
   Text,
   Avatar,
   IconButton,
+  InputGroup,
+  InputLeftAddon,
 } from "@chakra-ui/react";
-import { FaCamera} from "react-icons/fa";
+import { FaCamera } from "react-icons/fa";
 import Background from "../components/images/Background.png";
 import { Link } from "react-router-dom";
-// import photox from './photo/tu.jpg'
+
+import { RiLockPasswordLine } from "react-icons/ri";
+import { HiOutlineMail } from "react-icons/hi";
+import { CgProfile } from "react-icons/cg";
 
 const Register = () => {
   return (
@@ -39,11 +44,7 @@ const Register = () => {
                 style={{ position: "relative" }}
                 htmlFor="photo-project-file"
               >
-                <Avatar
-                  m="2.5"
-                  borderRadius="100"
-                  boxSize="120px"
-                />
+                <Avatar m="2.5" borderRadius="100" boxSize="120px" />
                 <IconButton
                   isRound
                   as="label"
@@ -90,36 +91,59 @@ const Register = () => {
                   textAlign="center"
                 />
               </HStack>
-              <Input
-                size="md"
-                placeholder="ชื่อผู้ใช้งาน"
-                variant="filled"
-                textAlign="center"
-                mt="4"
-              />
-              <Input
-                size="md"
-                placeholder="อีเมล"
-                variant="filled"
-                textAlign="center"
-                mt="4"
-              />
-              <Input
-                size="md"
-                placeholder="รหัสผ่าน"
-                type="password"
-                variant="filled"
-                textAlign="center"
-                mt="4"
-              />
-              <Input
-                size="md"
-                placeholder="ยืนยันรหัสผ่าน"
-                variant="filled"
-                type="password"
-                textAlign="center"
-                mt="4"
-              />
+              <InputGroup>
+                <InputLeftAddon
+                  pointerEvents="none"
+                  children={<CgProfile color="#0a7e8c" />}
+                  mt="4"
+                  fontSize="1.3em"
+                />
+                <Input
+                  size="md"
+                  placeholder="ชื่อผู้ใช้งาน"
+                  variant="filled"
+                  mt="4"
+                />
+              </InputGroup>
+              <InputGroup>
+                <InputLeftAddon
+                  pointerEvents="none"
+                  children={<HiOutlineMail color="#0a7e8c" />}
+                  mt="4"
+                  fontSize="1.3em"
+                />
+                <Input size="md" placeholder="อีเมล" variant="filled" mt="4" />
+              </InputGroup>
+              <InputGroup>
+                <InputLeftAddon
+                  pointerEvents="none"
+                  children={<RiLockPasswordLine color="#0a7e8c" />}
+                  mt="4"
+                  fontSize="1.3em"
+                />
+                <Input
+                  size="md"
+                  placeholder="รหัสผ่าน"
+                  type="password"
+                  variant="filled"
+                  mt="4"
+                />
+              </InputGroup>
+              <InputGroup>
+                <InputLeftAddon
+                  pointerEvents="none"
+                  children={<RiLockPasswordLine color="#0a7e8c" />}
+                  mt="4"
+                  fontSize="1.3em"
+                />
+                <Input
+                  size="md"
+                  placeholder="ยืนยันรหัสผ่าน"
+                  variant="filled"
+                  type="password"
+                  mt="4"
+                />
+              </InputGroup>
             </FormControl>
             <HStack justifyContent="center">
               <Button bgColor="#06C755" color="white" variant="solid" mt="8">
@@ -127,7 +151,7 @@ const Register = () => {
               </Button>
             </HStack>
             <nav>
-              <Link to="/login">
+              <Link to="/">
                 <Text as="u" fontSize="xs" color="blue">
                   Back to login
                 </Text>

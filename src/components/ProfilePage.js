@@ -6,7 +6,7 @@ const ProfilePage = () => {
     <div>
       <h1>ProfilePage</h1>
       <nav>
-        <Link to="/login">Login</Link>
+        <Link to="/">Login</Link>
       </nav>
     </div>
   );
