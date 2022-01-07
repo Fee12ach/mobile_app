@@ -10,7 +10,6 @@ import {
   HStack,
   InputGroup,
   InputLeftElement,
-  useToast,
 } from "@chakra-ui/react";
 import { Image } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
@@ -134,7 +133,7 @@ const Loginpage = (props) => {
           <Button color="white" size="md" bgColor="#2874A6" boxShadow="lg">
             Login
           </Button>
-          <Box as={Link} to="/register" color="#2874A6">
+          <Box as={Link} to="/home" color="#2874A6">
             <Text fontSize="xs">สมัครสมาชิก</Text>
           </Box>
           <Button

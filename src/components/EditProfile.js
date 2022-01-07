@@ -107,7 +107,6 @@ const EditProfile = () => {
                   size="md"
                   placeholder="ชื่อผู้ใช้งาน"
                   variant="Flushed"
-                  textAlign="center"
                   mt="4"
                 />
               </InputGroup>
@@ -118,13 +117,7 @@ const EditProfile = () => {
                   mt="4"
                   fontSize="1.3em"
                 />
-                <Input
-                  size="md"
-                  placeholder="อีเมล"
-                  variant="Flushed"
-                  textAlign="center"
-                  mt="4"
-                />
+                <Input size="md" placeholder="อีเมล" variant="Flushed" mt="4" />
               </InputGroup>
               <InputGroup>
                 <InputLeftElement
@@ -137,7 +130,6 @@ const EditProfile = () => {
                   size="md"
                   placeholder="เบอร์โทรศัพท์"
                   variant="Flushed"
-                  textAlign="center"
                   mt="4"
                 />
               </InputGroup>

@@ -9,13 +9,12 @@ import {
 import {
   AiFillHome,
   AiOutlineSearch,
-  AiFillStar,
   AiFillBell,
 } from "react-icons/ai";
 import { IoIosContact } from "react-icons/io";
 import { HStack } from "@chakra-ui/react";
 
-const BottomBar = () => {
+const FooterBar = () => {
   const [value, setValue] = useState(0);
   return (
     <Fragment>
@@ -67,4 +66,4 @@ const BottomBar = () => {
     </Fragment>
   );
 };
-export default BottomBar;
+export default FooterBar;

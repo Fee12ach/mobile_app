@@ -6,12 +6,14 @@ import RegisterPage from "./components/RegisterPage";
 import ForgotPassword from "./components/ForgotPassword";
 import EditProfile from "./components/EditProfile";
 import ProfilePage from "./components/ProfilePage";
-import BottomBar from "./components/BottomBar";
-import SideBar from "./components/SideBar";
+import FooterBar from "./components/FooterBar";
+import NavBar from "./components/NavBar";
+
 
 function App() {
   return (
     <div className="App">
+      {true && <NavBar />}
       <Routes>
         <Route path="/" element={<LoginPage />} />
         <Route path="/home" element={<HomePage />} />
@@ -19,9 +21,9 @@ function App() {
         <Route path="/forgotpassword" element={<ForgotPassword />} />
         <Route path="/editprofile" element={<EditProfile />} />
         <Route path="/profile" element={<ProfilePage />} />
-        <Route path="/sidebar" element={<SideBar />} />
+        <Route path="/navbar" element={<NavBar/>} />
       </Routes>
-      {false && <BottomBar />}
+      {true && <FooterBar />}
     </div>
   );
 }
